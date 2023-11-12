@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    
+  </head>
+
+  <body>
+  <canvas id="myCanvas" width="400" height="50" style="border:6px solid #000000;">
+</canvas>
+
+    <script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("HESAP MAKİNESİ", 65, 40);
+</script>
+<br> <br> <br>
+
+
+    
+    <div class="kenarlikliDiv">
+        
+        <form id="hesapMakinesiForm">
+            <input type="text" id="ekran" readonly>
+            
+            <button type="button" onclick="temizle()">C</button> <br>
+            <button type="button" onclick="ekle('1')">1</button>
+            <button type="button" onclick="ekle('2')">2</button>
+            <button type="button" onclick="ekle('3')">3</button>
+            <button type="button" onclick="ekle('/')">/</button> <br>
+
+            <button type="button" onclick="ekle('4')">4</button>
+            <button type="button" onclick="ekle('5')">5</button>
+            <button type="button" onclick="ekle('6')">6</button>
+            <button type="button" onclick="ekle('-')">-</button><br>
+            
+            <button type="button" onclick="ekle('7')">7</button>
+            <button type="button" onclick="ekle('8')">8</button>
+            <button type="button" onclick="ekle('9')">9</button>
+            <button type="button" onclick="ekle('+')">+</button><br>
+
+            <button type="button" onclick="ekle('.')">.</button>
+            <button type="button" onclick="ekle('0')">0</button>
+            <button type="button" onclick="hesapla()">=</button>
+            <button type="button" onclick="ekle('*')">*</button>
+            
+        </form>
+    </div>
+
+ <style>
+        
+        .kenarlikliDiv {
+            border: 2px solid #333; /* Kenarlık rengi */
+            width: 400px; /* Genişlik */
+            height: 260px;
+            padding: 1px; /* İçeriğin kenarlardan uzaklığı */
+            margin: 2px ; /* Ortalamak için margin */
+        }
+
+        /* Hesap makinesi için stil tanımlamaları */
+         button {
+            margin: 1px;
+            padding: 1px;
+            border:5px solid #111111;
+            width:95px;
+            height:50px;
+          
+        }
+        
+        input{
+          margin: 1px;
+            padding: 1px;
+            border:5px solid #111111;
+            width:286px;
+            height:40px;
+
+        }
+      </style>
+
+        <script>
+        // JavaScript fonksiyonları
+        function ekle(sayi) {
+            document.getElementById("ekran").value += sayi;
+        }
+
+        function temizle() {
+            document.getElementById("ekran").value = '';
+        }
+
+        function sil() {
+            var ekranDegeri = document.getElementById("ekran").value;
+            document.getElementById("ekran").value = ekranDegeri.slice(0, -1);
+        }
+
+        function hesapla() {
+            var ekranDegeri = document.getElementById("ekran").value;
+            var sonuc = eval(ekranDegeri);
+            document.getElementById("ekran").value = sonuc;
+        }
+    </script>
+
+
+
+
+
+
+  </body>
+</html>
