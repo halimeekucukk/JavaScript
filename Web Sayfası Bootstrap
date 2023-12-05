@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+   <div class="jumbotron text-center p-3 my-3 bg-dark text-white ">
+  <h2><i>ARZUTECH COMPUTER AND SOFTWARE
+    
+  </h2>
+  
+  <p>Yazılım Geliştirme - Kurulum  </p>
+  <button type="button" class="btn btn-primary">Yazılım Geliştirme </button>
+  <button type="button" class="btn btn-primary">Çözüm Ortağı</button>
+  <button type="button" class="btn btn-primary">Yazılım Kurulum </button>
+</div>
+
+
+<nav class="navbar navbar-expand-sm bg-dark >
+
+  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="https://arzutech.com/index.asp" style="color:grey">ANASAYFA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://www.arzutech.com/kurumsal.asp" style="color:grey">KURUMSAL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey">ÇÖZÜMLER</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey">BAYİLERİMİZ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey">HİZMETLER</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" style="color:grey">FİYATLAR</a>
+    </li>
+  </ul>
+
+</nav>
+
+<div class="container" style="margin-top: 50px">
+  <div class="row row-cols-2 justify-content-between">
+    <div class="col-sm-4">
+      
+      <hr class="d-sm">
+      <h3>ÇALIŞTIĞIMIZ FİRMALAR</h3>
+      <p></p>
+
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.luca.com.tr/">LUCA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://sambapos.com/tr/">SAMBAPOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bilnex.com.tr/">BİLNEX</a>
+        </li>
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">appp</a>
+        </li> -->
+      </ul>
+      
+      <hr class="d-sm">
+      
+      <h3>İLETİŞİM</h3>
+      <p></p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <label> Telefon : 05323762173</label>
+          <label> E-mail: bilgi@arzutech.com </label>
+          <label> Adres : Nişantaşı Mah. Demiryolu Cad. No:44
+            Selçuklu / KONYA</label>
+
+            <hr class="d-sm">
+            <h2 class="givemb">HAKKIMIZDA</h2>
+      
+           
+            <p>
+              Hakkımızda ile ilgili cümleler.
+            </p>
+          
+      </ul>
+    </div>
+
+    <div class="col-sm-7">
+      <hr class="d-sm">
+      <h2>İŞ ORTAKLIĞI </h2>
+
+      <div class=""form-group">
+        <label for=""firmaadi">Firma Adı: </label>
+        <input type="text" class="form-control " id ="firmaadi" placeholder= "Firma Adı "></div>
+
+      <div class=""form-group">
+        <label for=""firstname">İsim: </label>
+        <input type="text" class="form-control " id ="firstname" placeholder= "İsim "></div>
+        
+      <div class=""form-group">
+       <label for=""lastname">Soyisim: </label>
+       <input type="text" class="form-control " id ="lastname" placeholder= "Soyisim "></div>
+
+       <div class=""form-group">
+        <label for=""email">E-mail: </label>
+        <input type="text" class="form-control " id ="email" placeholder= "E-mail "></div>
+      
+      <div class=""form-group">
+        <label for="phone">Telefon: </label>
+        <input type="text" class="form-control " id ="phone" placeholder= "Telefon: "></div>
+
+      <hr class="d-sm">
+
+      <h2>AMACIMIZ</h2>
+      <p>
+Hizmet verdiğimiz sektörün tüm ürünlerini en geniş yelpazede tutarak, satış ve teknik desteğini, üretici veya distribütörlerden bayilere, kurumlara ve son kullanıcıya ulaştırmaktır. Bunu gerçekleştirirken verdiği hizmetin bilincinde olmak, pazarladığı ürünü gerek satış ve gerekse teknik desteğiyle müşterilerine ve iş ortaklarına değer katarak sunmaktır.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer d-flex justify-content-center align-items-center" style="background-color: rgb(247, 244, 244)">
+      <p>- Arzutech Bilgisayar Elek.Tel. San. ve Tic.Ltd.Şti. Her Hakkı Saklıdır. -</p>
+      <br>
+    </div>
+    
+  </body>
+</html>
