@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Photo Table with Hover Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif,center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1px;
+            margin-top: auto;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 8px; 
+        }
+
+        h1{
+          text-align: center;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 50px;
+        }
+
+        th {
+          background-color: blue;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: flex;            
+            justify-content: center;            
+            align-items: center;
+            text-align: center;
+        }
+
+        .alert{
+            margin-top: auto;
+            text-align: center;
+            display: flex;            
+            justify-content: center;            
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <table id="photo-table">
+        <head>
+<h1>RANDOMLY PHOTO CREATOR</h1>
+               
+<div class="alert alert-success" role="alert" ><i class="bi bi-info-circle" style="color:black;" ></i> 
+  
+        </head>
+        <tbody>
+            <tr>
+                <td><img id="photo1"></td>
+                <td><img id="photo2"></td>
+                <td><img id="photo3"></td>
+            </tr>
+            <tr>
+                <td><img id="photo4"></td>
+                <td><img id="photo5"></td>
+                <td><img id="photo6"></td>
+            </tr>
+            <tr>
+                <td><img id="photo7"></td>
+                <td><img id="photo8"></td>
+                <td><img id="photo9"></td>
+            </tr>
+            <tr>
+                <td><img id="photo10"></td>
+                <td><img id="photo11"></td>
+                <td><img id="photo12"></td>
+            </tr>
+            <tr>
+                <td><img id="photo13"></td>
+                <td><img id="photo14"></td>
+                <td><img id="photo15"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function rasgelefoto() {
+                return `https://source.unsplash.com/random/300x300?sig=${Math.random()}`;
+            }
+
+            function tabloguncelle() {
+                for (let i = 1; i <= 15; i++) {
+                    const photoElement = document.getElementById(`photo${i}`);
+                    photoElement.src = rasgelefoto();
+                }
+            }
+            
+            tabloguncelle();
+        });
+    </script>
+</body>
+</html>
